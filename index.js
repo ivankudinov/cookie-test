@@ -7,7 +7,7 @@ app.get(["/", "/:name"], (req, res) => {
     const html = `
         <h1>Cookie test</h1>
         <br/>
-        Cookies: ${req.headers.cookie}
+        <div style="width: 300px; word-break: break-all">Cookies: ${req.headers.cookie}</div>
         <br/>
         <button style="border:1px #eee solid; padding: 10px; margin: 10px 0" onclick="location.reload()">Reload</button>
     `;
