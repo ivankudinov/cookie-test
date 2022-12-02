@@ -11,7 +11,8 @@ app.get(["/", "/:name"], (req, res) => {
         <br/>
         <button style="border:1px #eee solid; padding: 10px; margin: 10px 0" onclick="location.reload()">Reload</button>
     `;
-    res.cookie("testcookie", "cookieval1", { httpOnly: true, sameSite: 'none', secure: true }).send(html);
+    // res.cookie("testcookie", "cookieval1", { httpOnly: true, sameSite: 'none', secure: true }).send(html); // secure cookie
+    res.cookie("testcookie", "cookieval1", { httpOnly: true }).send(html);
 });
 
 app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
