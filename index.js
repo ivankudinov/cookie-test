@@ -6,7 +6,7 @@ const port = process.env.PORT || 3001;
 app.get("/ksip", (req, res) => {
     res.json({
         status: "ok",
-        cts_url: "cts3dev.ccsteam.ru"
+        cts_url: "ects1dev.ccsteam.ru"
     });
 });
 
